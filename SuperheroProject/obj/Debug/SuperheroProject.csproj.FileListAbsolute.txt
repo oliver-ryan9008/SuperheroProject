@@ -113,7 +113,6 @@ C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\bin\Microsoft.AI.Depende
 C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\bin\Microsoft.AI.Web.xml
 C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\obj\Debug\SuperheroProject.csprojAssemblyReference.cache
 C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\obj\Debug\SuperheroProject.csproj.CoreCompileInputs.cache
 C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\obj\Debug\SuperheroProject.csproj.CopyComplete
 C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\obj\Debug\SuperheroProject.dll
