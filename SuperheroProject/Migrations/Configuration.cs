@@ -9,7 +9,7 @@ namespace SuperheroProject.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(SuperheroProject.Models.ApplicationDbContext context)
