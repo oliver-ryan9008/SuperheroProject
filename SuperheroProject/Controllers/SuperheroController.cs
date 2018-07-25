@@ -61,18 +61,34 @@ namespace SuperheroProject.Controllers
             return View(superhero);
         }
 
+        public ActionResult Update(int id)
+        {
+            var displayUpdate = (from d in db.Superhero where d.SuperheroId == id select d).FirstOrDefault();
+            return View(displayUpdate);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Update(Superhero superhero)
         {
-            return View();
+            Superhero updateHero = (from u in db.Superhero where u.SuperheroId == superhero.SuperheroId select u).FirstOrDefault();
+            updateHero.SuperheroName = superhero.SuperheroName;
+            updateHero.AlterEgo = superhero.AlterEgo;
+            updateHero.PrimaryAbility = superhero.PrimaryAbility;
+            updateHero.SecondaryAbility = superhero.SecondaryAbility;
+            updateHero.Catchphrase = superhero.Catchphrase;
+
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
-
-        [HttpPost, ActionName("Update")]
-        [ValidateAntiForgeryToken]
-        public ActionResult UpdateSuperhero(int id)
+        public ActionResult Display(int id)
         {
-            //start here 7/25/18
-            return View(id);
+            var displayDetails = (from d in db.Superhero where d.SuperheroId == id select d).FirstOrDefault();
+            return View(displayDetails);
         }
+
+
+        
     }
 }
