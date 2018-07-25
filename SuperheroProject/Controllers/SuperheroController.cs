@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using SuperheroProject.Models;
+using System.Data.Entity;
 
 namespace SuperheroProject.Controllers
 {
@@ -18,7 +19,6 @@ namespace SuperheroProject.Controllers
 
         public ActionResult Create()
         {
-            //ViewBag.SuperheroName = new SelectList(db.Superhero, "SuperheroName", "AlterEgo");
             return View();
         }
 
@@ -40,11 +40,12 @@ namespace SuperheroProject.Controllers
         public ActionResult Delete(int Id)
         {
             var deleteHero = (from h in db.Superhero
-                                    where h.SuperheroId == Id select h).FirstOrDefault();
+                              where h.SuperheroId == Id
+                              select h).FirstOrDefault();
             return View(deleteHero);
         }
 
-        [HttpPost, ActionName ("Delete")]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
@@ -58,6 +59,20 @@ namespace SuperheroProject.Controllers
 
             }
             return View(superhero);
+        }
+
+        public ActionResult Update(Superhero superhero)
+        {
+            return View();
+        }
+
+
+        [HttpPost, ActionName("Update")]
+        [ValidateAntiForgeryToken]
+        public ActionResult UpdateSuperhero(int id)
+        {
+            //start here 7/25/18
+            return View(id);
         }
     }
 }
