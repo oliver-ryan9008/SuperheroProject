@@ -119,3 +119,4 @@ C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\obj\Debug\SuperheroProje
 C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\obj\Debug\SuperheroProject.pdb
 C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\obj\Debug\SuperheroProject.Migrations.SuperheroMigration.resources
 C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\obj\Debug\SuperheroProject.csproj.GenerateResource.cache
+C:\Users\rdo17\Desktop\DevCode\ASP.net\SuperheroProject\obj\Debug\SuperheroProject.csprojAssemblyReference.cache

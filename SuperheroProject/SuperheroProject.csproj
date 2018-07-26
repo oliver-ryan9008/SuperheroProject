@@ -216,6 +216,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Goku.png" />
     <Content Include="Content\superherobootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
